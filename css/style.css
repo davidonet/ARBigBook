@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Conv_exljbris - MuseoSlab-500';
+    src: url('fonts/exljbris - MuseoSlab-500.eot');
+    src: local('☺'), url('../fonts/exljbris - MuseoSlab-500.woff') format('woff'), url('../fonts/exljbris - MuseoSlab-500.ttf') format('truetype'), url('../fonts/exljbris - MuseoSlab-500.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    overflow: hidden;
+    font-family: 'Conv_exljbris - MuseoSlab-500';
+    font-size: 16px;
+}
+.page {} .folio {} .textblock {} .textblock p {
+    text-align: justify;
+}
+.big {
+    font-size: 130%;
+}
+.vertical-center {
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    
+    min-height: 100vh;
+    /* These two lines are counted as one :-)       */
+    
+    display: flex;
+    align-items: center;
+}
