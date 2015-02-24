@@ -30,9 +30,17 @@ body {
 .photoaccess {
     text-align: center;
     z-index: 100;
+    font-size: 32px;
+    cursor: pointer;
+    margin-bottom: 32px;
 }
 .leftpage, .rightpage {
-    height: 600px;
+    height: 1080px;
+    cursor: pointer;
+    -webkit-transition: .3s;
+}
+.leftpage:hover, .rightpage:hover {
+    background-color: rgb(230, 230, 220);
 }
 .fullimg {
     position: absolute;
@@ -40,9 +48,21 @@ body {
     left0;
     width: 100%;
     height: 100%;
-    background-size:contain;
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+}
+.fullvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 100;
+    background-size: cover;
     display: none;
 }
